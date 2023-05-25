@@ -11,12 +11,9 @@ const orderRoutes = require("./api/routes/orders");
 const userRoutes = require("./api/routes/user");
 require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://jass:jassijassi@cluster0.9wvd40i.mongodb.net/shop",
-  {
-    useNewUrlParser: true,
-  }
-);
+mongoose.connect("mongodb://localhost", {
+  useNewUrlParser: true,
+});
 
 mongoose.Promise = global.Promise;
 
