@@ -46,7 +46,7 @@ app.use((req, res, next) => {
 
 const productsLimiter = rateLimit({
   windowMs: 1 * 1000, // 1 second
-  max: 1, // 1 request
+  max: 5, // 1 request
 });
 
 const userLimiter = rateLimit({

@@ -72,7 +72,7 @@ exports.products_get_product = (req, res, next) => {
     .then((doc) => {
       console.log(doc);
       if (doc) {
-        res.statuts(200).json({
+        res.status(200).json({
           product: doc,
           request: {
             type: "GET",
